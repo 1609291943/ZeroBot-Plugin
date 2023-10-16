@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	_ "github.com/FloatTech/ZeroBot-Plugin/console" // 更改控制台属性
+	 "github.com/FloatTech/ZeroBot-Plugin/console" // 更改控制台属性
 
 	"github.com/FloatTech/ZeroBot-Plugin/kanban" // 打印 banner
 
@@ -259,10 +259,10 @@ func init() {
 
 	// 通过代码写死的方式添加主人账号
 	 sus = append(sus, 1609291943)
-	// sus = append(sus, 87654321)
+	 sus = append(sus, 3624159533)
 
 	// 启用 webui
-	// go webctrl.RunGui(*g)
+	 go webctrl.RunGui(*g)
 
 	if *runcfg != "" {
 		f, err := os.Open(*runcfg)
